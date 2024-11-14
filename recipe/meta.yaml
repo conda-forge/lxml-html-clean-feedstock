@@ -1,13 +1,13 @@
 {% set name = "lxml-html-clean" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lxml_html_clean-{{ version }}.tar.gz
-  sha256: d9f7d8ae36092f4ed5079cfbf95ff06d3c6fd04f4a861422ce251ece72d3c4b5
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lxml_html_clean-{{ version }}.tar.gz
+  sha256: a8b517d3f46c19e9303eafb2a1b4b422fe724ad42ae53793637a8e5cc36ffbc1
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools >=61.0
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - lxml
 
 test:
@@ -30,6 +30,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/fedora-python/lxml_html_clean/
