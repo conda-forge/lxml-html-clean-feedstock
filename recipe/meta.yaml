@@ -1,5 +1,5 @@
 {% set name = "lxml-html-clean" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lxml_html_clean-{{ version }}.tar.gz
-  sha256: 91291e7b5db95430abf461bc53440964d58e06cc468950f9e47db64976cebcb3
+  sha256: c9df91925b00f836c807beab127aac82575110eacff54d0a75187914f1bd9d8c
 
 build:
   noarch: python
