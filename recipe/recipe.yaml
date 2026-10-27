@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: lxml-html-clean
-  version: "0.4.5"
+  version: "0.4.6"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/lxml_html_clean-${{ version }}.tar.gz
-  sha256: e2a4c7d5beedd17cd7b484d848a0571e54baa239a4f9df5546e3acba7f990560
+  sha256: ea9db067c3053854fd87f8d5a1cf01221dc893b54dbf6019c689052e05c64f22
 
 build:
   number: 0
